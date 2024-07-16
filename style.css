@@ -1,8 +1,62 @@
-h2 {
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
 
+
+h2{
+    border-style: dashed;
+    border-color: gray;
+    margin: 10px;
+    background-color: wheat;
+    width: 150px;
+    transition: width 3s;
+
+
+
+
+    /*CSS Animations */
+    animation-name: multiplecolors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorswitch{
+    from {background-color: rgb(255, 192, 203);}
+    to {backgorund-color: rgb(250 146, 205);}
+}
+
+@keyframes multiplecolors{
+    0% {background-color: rgb(255, 192, 203);}
+    25% {background-color: rgb(255, 192, 204);}
+    50% {background-color: rgb(244, 146, 163);}
+    75% {background-color: rgb(244, 146, 164);}
+    100% {background-color: rgb(250, 146, 205);}
+}
+
+
+
+
+
+
+
+h2:hover{
+    width: 200px;
 }
 
 #container{
     display: flex;
     flex-direction: row;
+}
+
+img {
+    width: 200px;
+    transition: width 3s;
+}
+img:hover{
+    width: 400px;
+    height: 400px;
 }
