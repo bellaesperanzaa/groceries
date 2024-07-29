@@ -15,7 +15,7 @@
     padding-top: 20px;
 }
 
-#h2{
+#h1{
     border-style: dashed;
     border-color: gray;
     margin: 10px;
@@ -24,14 +24,11 @@
     transition: width 3s;
     align-content: center;
 
-
-
     /*CSS Animations */
    
     animation-name: multiplecolors;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-
 }
 
 @keyframes colorswitch{
@@ -47,11 +44,10 @@
     100% {background-color: rgb(250, 146, 205);}
 }
 
-
-
-/* h2:hover{
+h2:hover{
     width: 200px;
-} */
+    
+} 
 
 #container{
     display: flex;
@@ -60,10 +56,12 @@
 
 img {
     width: 200px;
-    height: 200px;
     transition: width 3s;
+    padding: 15px;
+    padding-top: 20px;
 }
+
 img:hover{
     width: 250px;
     height: 250px;
-}
+} 
